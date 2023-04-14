@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="bootstrap.min.css" rel="stylesheet" />
+  <!-- <link href="/_CSS/ui.css" rel="stylesheet" /> -->
+  <link href="styles2.css" rel="stylesheet" />
+  <!-- <link href="/_CSS/shop.css" rel="stylesheet" /> -->
+  <!-- <link href="/_CSS/coloursA.css" rel="stylesheet" /> -->
+  <link href="all.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@800&display=swap" rel="stylesheet">
+  <style>
+
+    body {
+      font-family: sans-serif;
+      font-size: 1.6rem;
+      background-color: white;
+    }
+
+    h1 {
+      padding-top: 2rem;
+      color: rgb(224, 125, 125);
+
+    }
+
+    h4 {
+      color: rgb(224, 125, 125);
+    }
+
+    .hero {
+      font-size: 6vw;
+      font-family: 'Raleway', sans-serif;
+      color: rgb(71, 71, 71);
+    }
+
+    .heading2 {
+      text-align: left ;
+      font-size: 4vw;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+  </style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AccessExcel</title>
+</head>
+
+<body>
+  <div class="container">
+    <header style="background-color: white;">
+      <div class="content">
+        <nav class="navbar navbar-expand-md  navbar-light pt-1 pb-1">
+          <div class="container-fluid">
+            <img class="logo" src="ax4.svg" style="width:6vw" />
+
+            <div style="float:right">
+              <div class="hero">ACCESS EXCEL </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="blue">
+      <p class="heading2">A service specialising in the translation of Microsoft Excel spreadsheets and Access databases to Python based, data driven web applications.</p>
+
+      <p>For a variety of reasons a solution can outgrow its initial iterations in Excel, evolving into a critical decision making tool, the function of which must be assured.</p>
+      <p>Perhaps
+        its logic needs to be extended, additional data needs to be included, responsiveness may be suffering, too many tabs have made it unwieldy, can be difficult to share with colleagues or that
+        maintenance has become unmanageable.
+      </p>
+      <p>Whatever the reason, Python and a few choice libraries provide options and techniques to alleviate the above issues through the migration to a new web based application.
+    </section>
+    <div class="spacer layer1"></div>
+    <section>
+
+      <h1>Advantages</h1>
+
+
+      <h4>
+        Easier to share</h4>
+      <p>Accessible to anyone on your internal network with relevant permissions and a browser.
+      </p>
+      <h4>
+        Easier to maintain
+      </h4>
+      <p>Engineered with clean code best practices the new application will have a well defined structure, workflow and functions, with a neat, well documented and tested codebase.
+
+      <p>Python is the second most commonly used programming language, relatively readable. You should have no problem finding staff able to support the solution. Even non-developers should be able
+        discern the logic and potentially modify the code</p>
+      <p>All changes are also recorded in source control making it easier to compare previous versions and to revert changes.</p>
+      <h4>
+        Better responsiveness
+      </h4>
+      <p>One of main reasons performance degrades is that the spreadsheet can often hold large datasets amongst its sheets and apply complex formulas, when the user interacts with the spreadsheet or
+        data is updated calculations propagate through the columns and rows to update the state. </p>
+      <p>Typically the migration process involves designing a better delineation of data, function and interface, resulting in the former being moved from sheets to a tables in a database, logic to
+        the Python backend and the user interface to a web front end,
+        improved responsiveness should fall out from this re-implementation.
+
+      </p>
+
+      <h4>Lighter Excel</h4>
+      <p>
+        We recognise many end users are very familiar with the Excel user interface and would prefer to keep the flexibility it provides, in these scenarios we provide hybrid solutions that keep
+        elements of the Excel front end but offload the compute to the Python logic and data storage to a database</p>
+
+      <h4>Expand Access</h4>
+      <p>Sometimes the knowhow of an Excel application resides
+        only with a few individuals. With good interface design the functionality, data and visualisations can be opened up to a broader user base.
+      </p>
+      <!-- <div class="custom-shape-divider-top-1680861401">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+  </svg>
+</div> -->
+    </section>
+    <div class="spacer layer1"></div>
+    <section>
+      <h1> Technology</h1>
+
+      <p>We keep the stack simple and minimal, leveraging only the most ubiquitous packages, for the majority of projects these consist of the graphing library Plotly and its associated open source
+        web framework Dash. For efficient data storage and manipulation we use the popular numpy and pandas libraries. </p>
+      <p>The web based front end means access to wide range of visualisation options and a light-weight highly responsive interface with familiar components and look and feel</p>
+
+      <p>See some example here <a href="https://plotly.com/examples/" target="_blank">Dash Application examples</a> </p>
+    </section>
+    <div class="spacer layer2"></div>
+    <section>
+      <h1>Testing</h1>
+      <p>A major part of any well delivered software project is
+        including comprehensive test cover, in fact it's one of the major
+        advantages of using Python over Excel, that is it's often difficult to be certain
+        a complex cell formula is doing exactly what is expected for every cell in the column, very often we unearth bugs.</p>
+      <p>Maybe you have a battle tested critical spreadsheet and have the valid concern about the potential to introduce issues rather than remove them.</p>
+      <p>As part of our development we include integration tests that compare the outputs of the old and new solutions, so we can demonstrate that key functionality, in the new solutions produces the
+        exact same output as the original.</p>
+
+    </section>
+    <div class="spacer layer2"></div>
+    <section>
+      <h1>Hosting</h1>
+      <p>Most commonly we work with your I.T. to find a hosting solution, any computer can host these web applications, depending on the compute required and numbers of users we can advise on hardware
+        specifications.
+      <p> We also work with I.T. to understand options for data storage and can assist in the design, build and tuning of databases.</p>
+    </section>
+    <div class="spacer layer2"></div>
+    <section>
+      <h1>How we work</h1>
+      <p>We endeavour to be as low profile as possible, give us an overview of your use case, let us sit with the spreadsheet and ask some questions, perhaps you may require some extra functionality,
+        we'll derive the requirements, outline a brief specification and agree those with you along with a backlog plan and timelines.
+      </p>
+    </section>
+    <div class="spacer layer2"></div>
+    <section>
+      <h1>Privacy</h1>
+      <p>Often we work with proprietary data, processes and algorithms, we're happy to sign non-disclosure agreements and work to protocols you may require, for example, always working from an
+        onsite terminal.</p>
+    </section>
+    <div class="spacer layer1"></div>
+    <section>
+      <h1>Offerings</h1>
+      <p>We've translated all kinds of applications, think you've got something too complicated? Possibly, but we've worked on some surprisingly large and complex projects, for example exotic FX
+        options pricing and risk tools, power plant optimisation models and genomic data analysis.</p>
+      <p>We're London based but not tethered, working across the UK, EU and beyond.</p>
+    </section>
+    <div class="spacer layer2"></div>
+    <section >
+      <h1>Contact</h1>
+      <p>Email us on <a href="mailto:contact@accessexcel.com" class="me-2">contact@accessexcel.com</a>or call us on +44 (0)20 7558 8474 to arrange a meeting.
+    </section>
+    <br/>
+    <footer >
+      <div class="content-bottom w-100 d-flex align-items-center">
+        <div style="border-top: 1px rgb(224, 125, 125) solid;"  class="container">
+          <div class="d-flex flex-column flex-md-row justify-content-between">
+            <span class="footer-references">Copyright <a href="https://www.synthase.co.uk" target="_blank">Synthase</a> Limited 2023. All rights reserved</span>
+            <div class="d-flex align-items-center footer-references">
+              <a href="mailto:contact@accessexcel.com" class="me-2">contact@accessexcel.com</a>
+              <a href="privacy.html" class="me-2">privacy</a>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column flex-md-row justify-content-between mt-2 mb-2">
+            <div>1st Floor, 8B Portman Road, Reading, RG30 1EA, United Kingdom</div>
+            <div class="d-flex align-items-center footer-references">
+              <div class="me-2">+44 (0)20 7558 8474</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+</body>
+</html>
