@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="highcharts.js"></script>
+    <script src="dark-unica.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <script src="jsX.js"></script>
+    <script src="tsX.js"></script>
+   
+    <link href='cssX.css' rel='stylesheet' />
+    <link href='stylesX.css' rel='stylesheet' />
+  
+
+
+    <script src="jsonX.js"></script>
+
+    <style>
+        .hiding {
+            display: none;
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        window.onload = () => {
+
+            plantsPage.onLoad();
+            outagePage.onLoad();
+            basePage.onLoad();
+            appPage.onLoad();
+            plantsPage.setUpEventListeners();
+            outagePage.setUpEventListeners();
+        };
+
+        jQuery(document).ready(function () {
+            if (location.protocol === 'https:')
+                jQuery.get(macroKey)
+        });
+
+    </script>
+</head>
+
+<body class="darkTheme">
+    <!-- <p>Capacity of each unit </p> -->
+    <div class="grid-container">
+        <div class="grid-item cell1 flex1 justify-content-between"">
+            <div>
+                <div class="btn-group  " role="group">
+                    <input type="radio" class="btn-check " name="btnRadioC" id="btnRadioC1" autocomplete="off" checked value="0">
+                    <label class="btn btn-outline-info btn-sm" for="btnRadioC1">Table</label>
+
+                    <input type="radio" class="btn-check" name="btnRadioC" id="btnRadioC2" autocomplete="off" value="1">
+                    <label class="btn btn-outline-info btn-sm" for="btnRadioC2">Chart</label>
+                </div>
+                <div class="btn-group  btn-group" role="group">
+                    <input checked type="checkbox" class="btn-check " name="btnRadioD" id="btnRadioD2" autocomplete="off" value="0">
+                    <label class="btn btn-outline-info btn-sm" for="btnRadioD2">Capacities</label>
+                    <input checked type="checkbox" class="btn-check" name="btnRadioD" id="btnRadioD3" autocomplete="off" value="1">
+                    <label class="btn btn-outline-info btn-sm" for="btnRadioD3">Outages</label>
+                </div>
+                <div class="btn-group  btn-group" role="group">
+                    <input type="radio" class="btn-check " name="btnRadioA" id="btnRadioA1" autocomplete="off" checked value="0">
+                    <label class="btn btn-outline-info btn-sm" for="btnRadioA1">Units</label>
+
+                    <input type="radio" class="btn-check" name="btnRadioA" id="btnRadioA2" autocomplete="off" value="1">
+                    <label class="btn btn-outline-info btn-sm" for="btnRadioA2">Fuels</label>
+                </div>
+                <div class="btn-group" role="group">
+                    <select id="sl2" class="form-select form-select-sm"></select>
+                </div>
+            </div>
+            <div>
+                <div class="btn-group clCharts" role="group">
+                    <input type="radio" class="btn-check " name="btnRadioK" id="btnRadioK1" autocomplete="off" checked value="0">
+                    <label class="btn btn-outline-info btn-sm" for="btnRadioK1">16 weeks</label>
+                    <input type="radio" class="btn-check" name="btnRadioK" id="btnRadioK2" autocomplete="off" value="1">
+                    <label class="btn btn-outline-info btn-sm"  for="btnRadioK2">2 years</label>
+                </div>
+                <div class="btn-group  btn-group clCharts" role="group">
+                    <input type="radio" class="btn-check" name="btnRadioJ" id="btnRadioJ2" autocomplete="off" checked value="0">
+                    <label class="btn btn-outline-info btn-sm" for="btnRadioJ2">Unavailability</label>
+                    <input type="radio" class="btn-check " name="btnRadioJ" id="btnRadioJ1" autocomplete="off" value="1">
+                    <label class="btn btn-outline-info btn-sm" for="btnRadioJ1">Availability</label>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item2 cell11">
+
+            <div class="dvFuels btn-group d-flex" role="group" id="dvButtons"></div>
+
+
+            <!-- <div class="btn-group  btn-group" role="group">
+                <input type="radio" class="btn-check " name="btnRadioE" id="btnRadioE1" autocomplete="off" checked
+                    value="0">
+                <label class="btn btn-outline-primary" for="btnRadioE1">All</label>
+
+                <input type="radio" class="btn-check" name="btnRadioE" id="btnRadioE2" autocomplete="off" value="1">
+                <label class="btn btn-outline-primary" for="btnRadioE2">Latest</label>
+            </div> -->
+
+        </div>
+        <div id="gdMain" class="innerGrid">
+            <div class="grid-item cell2">
+                <div class="table-wrapper spaced">
+                    <div class="dvTable outage" id="dvTable2"></div>
+                    <div class="dvChart outage" id="dvChart2"></div>
+                </div>
+            </div>
+            <div class="grid-item cell3">
+                <div class="table-wrapper spaced">
+                    <div class="dvTable capacity" id="dvTable"></div>
+                    <div class="dvChart capacity " id="dvChart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item cell4X grid-container-footerX">
+            <div class="footerFlex">
+                <span class="spanHeader">Example of functionality migrated from a spreadsheet reporting power plant availabilty to a dynmaic data-driven web application.</span>
+            </div>
+        </div>
+</body>
+
+</html>
